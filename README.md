@@ -7,6 +7,7 @@ This script generates a list of applicable VMs (VMs backed-up by 'ghettoVCB.sh' 
 
 
 Ex.
+
 `./list-generator-ghettoVCB-restore.sh -s /vmfs/volumes/ -d /vmfs/volumes/main-datastore`
 
 
