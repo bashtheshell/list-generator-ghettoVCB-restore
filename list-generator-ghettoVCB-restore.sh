@@ -7,8 +7,8 @@
 # SUMMARY: This script generates a list of applicable VMs (VMs backed-up by 'ghettoVCB.sh' script) to be restored.
 # This script will automatically determine the appropriate disk format for each VM. The output file is intended to be 
 # used with 'ghettoVCB-restore.sh' script. Supported disk formats are 'thin', 'eagerzeroedthick', and 'zeroedthick'.
-# '2gbsparse' and other unidentified disk formats are not supported in this script and would ultimately assumed to be 
-# 'zeroedthick'.
+# '2gbsparse' and other unidentified disk formats are not supported in this script and those unsupported formats would 
+# ultimately assumed to be 'zeroedthick'.
 
 
 # WARNING: This script assumes all disks on each VM are using the same disk format as its first attached disk. 
