@@ -165,9 +165,9 @@ do
 
 	# Determine the appropriate disk format
 	for diskfile in $(ls ${path} | grep -E '_[0-9]+.vmdk' | sort)
-		do
-			diskNum=$(echo $diskfile | sed 's/.*_\([0-9]\+\).vmdk$/\1/')
-			filenamePrefix=$(echo $diskfile | sed 's/\(.*_\)[0-9]\+.vmdk$/\1/')
+	do
+		diskNum=$(echo $diskfile | sed 's/.*_\([0-9]\+\).vmdk$/\1/')
+		filenamePrefix=$(echo $diskfile | sed 's/\(.*_\)[0-9]\+.vmdk$/\1/')
 
 		if [ -n "$(grep 'ddb.thinProvisioned = "1"' ${path}/${diskfile})" ]
 		then
